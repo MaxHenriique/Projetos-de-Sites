@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="mercearia, site, responsivo, compras">
+    <meta name="description" content="Design de site de Mercearia responsivo">
+    <meta name="author" content="Max Henrique Fontes Sinche">\
+    <title>Website de Mercearia</title>
+
+    <!-- Link para o Swiper CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+
+    <!-- Link para o Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- começo da seção do cabeçalho -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> groco </a>
+
+    <nav class="navbar">
+        <a href="#home">início</a>
+        <a href="#features">recursos</a>
+        <a href="#products">produtos</a>
+        <a href="#categories">categoria</a>
+        <a href="#review">avaliação</a>
+        <a href="#blogs">blogs</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="procure aqui...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="img/cart-img-1.png" alt="">
+            <div class="content">
+                <h3>melancia</h3>
+                <span class="price">R$12.99</span>
+                <span class="quantity">qtd : 1</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="img/cart-img-2.png" alt="">
+            <div class="content">
+                <h3>cebola</h3>
+                <span class="price">R$4.99</span>
+                <span class="quantity">qtd : 1</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="img/cart-img-3.png" alt="">
+            <div class="content">
+                <h3>frango</h3>
+                <span class="price">R$9.99</span>
+                <span class="quantity">qtd : 1</span>
+            </div>
+        </div>
+
+        <div class="total"> total : R$27.97</div>
+        <a href="#" class="btn">finalizar</a>
+
+    </div>
+
+    <form action="" class="login-form">
+        <h3>login</h3>
+        <input type="email" placeholder="Seu email" class="box">
+        <input type="password" placeholder="Sua senha" class="box">
+        <p>esqueci minha senha <a href="#">clique aqui</a></p>
+        <p>não tem conta <a href="#">clique aqui</a></p>
+        <input type="submit" value="login" class="btn">
+    </form>
+
+</header>
+
+<!-- final da seção do cabeçalho -->
+
+<!-- começo da seção do home -->
+
+<section class="home" id="home">
+
+    <div class="content"> 
+        <h3>produtos frescos e <span>orgânicos</span> para você</h3>
+        <p>Toda semana ou quinzena uma cesta com frutas, legumes e verduras orgânicos, frescos e da estação entregues na sua casa!</p>
+        <a href="#" class="btn">compre agora</a>
+    </div>
+
+</section>
+
+<!-- final da seção do home -->
+
+<!-- começo da seção do recursos-->
+
+<section class="features" id="features">
+
+    <h1 class="heading"> nossos <span>recursos</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="img/feature-img-1.png" alt="">
+            <h3>fresco e orgânico</h3>
+            <p>Receba produtos orgânicos direto do campo toda semana!</p>
+            <a href="#" class="btn">saiba mais</a>
+        </div>
+
+        <div class="box">
+            <img src="img/feature-img-2.png" alt="">
+            <h3>entrega grátis</h3>
+            <p>Delivery com mais de 2 mil produtos orgânicos, naturais, artesanais, da agricultura familiar ou agroecológica!</p>
+            <a href="#" class="btn">saiba mais</a>
+        </div>
+
+        <div class="box">
+            <img src="img/feature-img-3.png" alt="">
+            <h3>pagamentos fáceis</h3>
+            <p>Visa, mastercard, american express, paypal, elo e pix!</p>
+            <a href="#" class="btn">saiba mais</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- final da seção do recursos-->
+
+<!-- começo da seção do produtos-->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> nossos <span>produtos</span> </h1>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="img/product-1.png" alt="">
+                <h3>laranja</h3>
+                <div class="price">R$4.99 - R$10.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">adicionar</a>
+            </div>
+            
+            <div class="swiper-slide box">
+                <img src="img/product-2.png" alt="">
+                <h3>cebola</h3>
+                <div class="price">R$4.99 - R$10.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">adicionar</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="img/product-3.png" alt="">
+                <h3>carne fresca</h3>
+                <div class="price">R$4.99 - R$10.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">adicionar</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="img/product-4.png" alt="">
+                <h3>repolho</h3>
+                <div class="price">R$4.99 - R$10.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">adicionar</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="img/product-5.png" alt="">
+                <h3>batata</h3>
+                <div class="price">R$4.99 - R$10.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">adicionar</a>
+            </div>
+            
+            <div class="swiper-slide box">
+                <img src="img/product-6.png" alt="">
+                <h3>abacate</h3>
+                <div class="price">R$4.99 - R$10.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">adicionar</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="img/product-7.png" alt="">
+                <h3>cenoura</h3>
+                <div class="price">R$4.99 - R$10.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">adicionar</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="img/product-8.png" alt="">
+                <h3>limão verde</h3>
+                <div class="price">R$4.99 - R$10.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">adicionar</a>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- final da seção do produtos-->
+
+<!-- começo da seção do categoria-->
+
+<section class="categories" id="categories">
+
+    <h1 class="heading"> categoria <span>produtos</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="img/cat-1.png" alt="">
+            <h3>vegetais</h3>
+            <p>oferta 45% off</p>
+            <a href="#" class="btn">compre agora</a>
+        </div>
+
+        <div class="box">
+            <img src="img/cat-2.png" alt="">
+            <h3>frutas frescas</h3>
+            <p>oferta 45% off</p>
+            <a href="#" class="btn">compre agora</a>
+        </div>
+
+        <div class="box">
+            <img src="img/cat-3.png" alt="">
+            <h3>Laticínios</h3>
+            <p>oferta 45% off</p>
+            <a href="#" class="btn">compre agora</a>
+        </div>
+
+        <div class="box">
+            <img src="img/cat-4.png" alt="">
+            <h3>carne fresca</h3>
+            <p>oferta 45% off</p>
+            <a href="#" class="btn">compre agora</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- final da seção do categoria-->
+
+<!-- começo da seção do avaliações-->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> avaliações <span>clientes</span> </h1>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="img/pic-1.png" alt="">
+                <p>excelente qualidade vem na quantidade certa (nada estraga, tudo é consumido).</p>
+                <h3>pedro h.</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="img/pic-2.png" alt="">
+                <p>conheci o groco por causa de uma matéria no programa pequenas empresas grandes negócios. Comecei a comprar com eles e há uns 2 meses SÓ consumo os produtos orgânicos do groco!</p>
+                <h3>ana b.</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="img/pic-3.png" alt="">
+                <p>Ótimo desde a atenção via Whats ao entregador, sempre prestativos. Quanto aos alimentos é cada novidade, fora o sabor diferenciado!</p>
+                <h3>gustavo a.</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="img/pic-4.png" alt="">
+                <p>minha experiência tem sido ótima. Compro do Groco há 4 meses aproximadamente, a cada 2 semanas. Os produtos chegam frescos e maduros!</p>
+                <h3>camila s.</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+ 
+        </div>
+ 
+    </div>
+
+</section>
+
+<!-- final da seção do avaliações-->
+
+<!-- começo da seção do blogs-->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> nossos <span>blogs</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="img/blog-1.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fas fa-user"></i> todo dia blog </a>
+                    <a href="#"><i class="fas fa-calendar"></i> 19/04/2022 </a>
+                </div>
+                <h3>Greenpeople produz sucos ricos em vitaminas e nutrientes</h3>
+                <p>Sacrificar uma alimentação saudável por conta de compromissos pessoais ou profissionais, convenhamos, é uma das coisas mais comuns...</p>
+                <a href="#" class="btn">saiba mais</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img/blog-2.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fas fa-user"></i> todo dia blog </a>
+                    <a href="#"><i class="fas fa-calendar"></i> 20/04/2022 </a>
+                </div>
+                <h3>Os 5 alimentos da Ayurveda e seus benefícios</h3>
+                <p>Você já ouviu falar da Ayurveda? Muitas pessoas acreditam que trata-se de mais uma dieta da moda, mas é muito mais do que isso...</p>
+                <a href="#" class="btn">saiba mais</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img/blog-3.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fas fa-user"></i> todo dia blog </a>
+                    <a href="#"><i class="fas fa-calendar"></i> 21/04/2022 </a>
+                </div>
+                <h3>Vem cá conhecer um pouco mais sobre a cadeia de alimentos</h3>
+                <p>Todo dia, cerca de 41 toneladas de alimentos são desperdiçados no Brasil de acordo com o World Resources Institute...</p>
+                <a href="#" class="btn">saiba mais</a>
+            </div>
+        </div>
+
+    </div>
+
+
+</section>
+
+<!-- final da seção do blogs-->
+
+<!-- começo da seção do rodapé-->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>groco <i class="fas fa-shopping-basket"></i> </h3>
+            <p>Produtos Frescos E Orgânicos Para Você, Entregues Na Sua Casa!</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-github"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Informações de contato</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> contato.maxhenrique@gmail.com</a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> São Paulo, Brasil - 08456-283 </a>
+        </div>
+
+        <div class="box">
+            <h3>Links Rápidos</h3>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> início </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> recursos </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> produtos </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> categoria </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> avaliação </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>Receba ofertas e novidades exclusivas</p>
+            <input type="email" placeholder="Seu email" class="email">
+            <input type="submit" value="inscreva-se" class="btn">
+            <img src="img/payment.png" class="payment-img" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> Criado Pelo <span> mr. web Designer e max Henrique </span> | Todos os direitos reservados </div>
+
+</section>
+
+<!-- final da seção do rodapé-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- Link para o JavaScript -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
