@@ -1,5 +1,5 @@
 # Projetos - Site
-Repositório que contém projetos de um sites responsivos utilizando HTML - CSS - JavaScript
+Repositório que contém projetos de sites responsivos utilizando HTML - CSS - JavaScript
 <br>
 
 ### Projeto - <a href="https://github.com/MaxHenriique/Projetos-de-Sites/tree/main/Nodeshop%20-%20Aplicando%20HTML%20-%20CSS%20na%20pr%C3%A1tica">Nodeshop</a>
